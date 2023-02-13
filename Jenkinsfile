@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'mvn -B -DskipTests clean package'
+                bat 'C:\ProgramData\Jenkins\.jenkins\workspace\Webapp>mvn -B -DskipTests clean package'
             }
         }
 //         stage('Sonar-Report') {
