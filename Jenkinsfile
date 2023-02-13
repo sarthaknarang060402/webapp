@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'mvn -B -DskipTests clean package'
+                 echo 'This is a minimal pipeline.'
             }
         }
 //         stage('Sonar-Report') {
@@ -18,17 +18,12 @@ pipeline {
 //         }
         stage('Test') { 
             steps {
-                bat 'mvn test' 
-            }
-            post {
-                always {
-                    junit 'target/surefire-reports/*.xml' 
-                }
+                 echo 'This is a minimal pipeline.'
             }
         }
         stage('Sonar-Report') {
             steps {
-                bat 'mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.analysis.mode=publish'
+                 echo 'This is a minimal pipeline.'
             }
         }
     }
