@@ -4,9 +4,9 @@ pipeline {
     }
     stages {
         stage('Build') {
-            steps {
-//                 bat 'mvn -B -DskipTests clean package'
-            }
+//             steps {
+// //                 bat 'mvn -B -DskipTests clean package'
+//             }
         }
 //         stage('Sonar-Report') {
 //             steps {
@@ -17,9 +17,9 @@ pipeline {
 //             }
 //         }
         stage('Test') { 
-            steps {
-//                 bat 'mvn test' 
-            }
+//             steps {
+// //                 bat 'mvn test' 
+//             }
 //             post {
 //                 always {
 //                     junit 'target/surefire-reports/*.xml' 
@@ -27,9 +27,9 @@ pipeline {
 //             }
         }
         stage('Sonar-Report') {
-            steps {
-//                 bat 'mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.analysis.mode=publish'
-            }
+//             steps {
+// //                 bat 'mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.analysis.mode=publish'
+//             }
         }
     }
 }
