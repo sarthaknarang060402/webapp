@@ -1,5 +1,4 @@
-Spark Puppet Webapp Sample
-==========================
+# Spark Puppet Webapp Sample
 
 Sample hello world webapp
 
@@ -7,8 +6,5 @@ Sample hello world webapp
 mvn clean package
 java -jar target/puppet-webapp-<VERSION>.jar
 ```
-Change made for pull request by @notsarthak
 
-
-
-
+Hi I am Sarthak Narang
