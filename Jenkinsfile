@@ -19,9 +19,9 @@ pipeline {
       }
     }
 
-    stage('Sonar-Report') {
+    stage('Nexus-deploy') {
       steps {
-        echo 'done'
+        bat 'mvn clean deploy'
       }
     }
 
