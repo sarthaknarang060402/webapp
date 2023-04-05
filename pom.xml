@@ -17,7 +17,7 @@
     <repository> 
         <id>upes</id> 
         <name>Releases</name>
-        <url>http://localhost:8081/nexus/content/repositories/u pes/</url> 
+        <url>http://localhost:8081/nexus/content/repositories/upes/</url> 
     </repository> 
   </repositories>
   <distributionManagement> 
