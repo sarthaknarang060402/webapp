@@ -34,5 +34,6 @@ pipeline {
   tools {
     maven 'mymaven'
     //sonar 'mysonar'
+    SonargraphReport sonargraphBuildJDK: 'jdk11', sonargraphBuildVersion: 'mysonar'
   }
 }
