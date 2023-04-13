@@ -12,8 +12,9 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <sonar.login>jenkins_project</sonar.login>
-    <sonar.password>squ_8ba4c9c52128a82fef500be573b2f92486c89242</sonar.password>
+    <sonar.host.url>https:localhost:9000</sonar.host.url>
+<!--<sonar.login>jenkins_project</sonar.login>
+    <sonar.password>squ_8ba4c9c52128a82fef500be573b2f92486c89242</sonar.password> -->
   </properties>
   <repositories>
     <repository> 
