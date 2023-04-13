@@ -34,7 +34,7 @@ pipeline {
         }
       }
     }
-    stage('Static-Code) {
+    stage('Static-Code') {
       steps {
         withSonarQubeEnv('mysonar') {
           bat'mvn clean install sonar:sonar \
