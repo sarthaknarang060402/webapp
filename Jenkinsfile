@@ -26,6 +26,7 @@ pipeline {
     }
     stage('Sonar-Demo') {
       steps {
+        SonargraphReport sonargraphBuildJDK: 'jdk11', sonargraphBuildVersion: 'mysonar'
         bat 'mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000 Dsonar.analysis.mode=publish'
       }
     }
@@ -35,5 +36,5 @@ pipeline {
     maven 'mymaven'
     //sonar 'mysonar'
   }
-  SonargraphReport sonargraphBuildJDK: 'jdk11', sonargraphBuildVersion: 'mysonar'
+  
 }
