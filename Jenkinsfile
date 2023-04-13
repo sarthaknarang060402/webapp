@@ -26,7 +26,7 @@ pipeline {
     }
     stage('Sonar-Demo') {
       steps {
-        withSonarQubeEnv('SonarQube') {
+        withSonarQubeEnv('mysonar') {
         bat 'mvn clean install sonar:sonar \
         -Dsonar.host.url=http://localhost:9000 \
         -Dsonar.analysis.mode=publish org.codehaus.sonar-plugins.pdf-report:mavenpdfreport-plugin:1.3:generate \
