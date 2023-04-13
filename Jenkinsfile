@@ -33,5 +33,6 @@ pipeline {
   }
   tools {
     maven 'mymaven'
+    sonar 'mysonar'
   }
 }
