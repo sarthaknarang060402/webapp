@@ -19,7 +19,7 @@ pipeline {
       }
     }
 
-    stage('Nexus-deploy') {
+    stage('Nexus-artifacts') {
       steps {
         bat 'mvn clean deploy'
       }
@@ -33,7 +33,12 @@ pipeline {
           -Dsonar.login=squ_986172bfd1ef8ecab3b0ca4e51116b14bdd69eec'
         }
       }
-    }       
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Deploy'
+      }
+    }
 
   }
   tools {
